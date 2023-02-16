@@ -11,7 +11,7 @@
 //    });
 //  }, 2000);   
 // }
-//module.exports = startPeriod;
+// module.exports = startPeriod;
 
 const EventEmitter = require('events');
 class School extends EventEmitter{
@@ -26,5 +26,4 @@ class School extends EventEmitter{
      }, 2000);   
     }
 }
-
 module.exports = School;

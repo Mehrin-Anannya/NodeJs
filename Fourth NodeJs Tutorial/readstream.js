@@ -4,7 +4,7 @@ const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.write('<html><head><title>Form</title></head>');
         res.write(
-            '<body><form method="post" action="/process"><input name="message" /></form></body>'
+            '<body><form method="post" action="/process"><input name="message" /></form></body></html>'
         );
         res.end();
     } else if (req.url === '/process' && req.method === 'POST') {
@@ -24,7 +24,5 @@ const server = http.createServer((req, res) => {
         res.end();
     }
 });
-
 server.listen(3000);
-
 console.log('listening on port 3000');
